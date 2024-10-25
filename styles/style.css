@@ -93,7 +93,6 @@ ol {
   flex-direction: column;
   flex-grow: 1;
   gap: 23px;
-  height: 534px;
 }
 
 .content__list {
@@ -102,14 +101,15 @@ ol {
   flex-direction: column;
   position: relative;
   padding: 1px;
+  height: 298px;
 }
 
 .content__video-card {
   display: flex;
 }
 
-.content__list-item {
-  margin-bottom: 30px;
+.content__list-item:not(:first-child) {
+  margin-top: 30px;
 }
 
 .content__card-link {
@@ -170,7 +170,7 @@ ol {
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .search-form {
@@ -264,6 +264,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
   border: 1px solid #fff;
   align-self: flex-end;
   padding: 6px;
+  font-weight: 700;
 }
 
 .button:focus {
@@ -289,4 +290,5 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
 
 .more-button {
   width: 100%;
+  margin-top: 30px;
 }
